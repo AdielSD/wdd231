@@ -1,0 +1,51 @@
+/* COLOR SCHEME */
+/*#335c67 
+#fff3b0*/
+
+/***SITE WIDE***/
+
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+
+/***HEADER***/
+
+header {
+    display: grid;
+    grid-template-columns: 24px auto 44px;
+    padding: 5px 0 5px 10px;
+    align-items: end;
+    border-bottom: solid 1px #ddd;
+    column-gap: 8px;
+}
+
+header img {
+    display: block;
+    width: 100%;
+    height: auto;
+   
+}
+
+header span {
+    font-size: 1.2rem;
+    color: #335c67; }
+
+
+.hamburguer {
+background: none;
+border: none;
+color: #335c67;
+cursor: pointer;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.hamburguer::before {
+    content: "\2630";
+    font-size: 1.5rem ;
+}
+
+.hamburguer.show::before {
+    content: "\00D7";
+    font-size: 1.5rem ;
+}

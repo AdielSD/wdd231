@@ -1,15 +1,31 @@
 /* COLOR SCHEME */
-/*#335c67 
-#fff3b0*/
+/* #335c67 
+   #fff3b0 */
 
-/***SITE WIDE***/
+
+/*** SITE WIDE ***/
 
 * {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     box-sizing: border-box;
 }
 
-/***HEADER***/
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+
+/*** HEADER ***/
 
 header {
     display: grid;
@@ -24,28 +40,211 @@ header img {
     display: block;
     width: 100%;
     height: auto;
-   
 }
 
 header span {
     font-size: 1.2rem;
-    color: #335c67; }
+    color: #335c67;
+}
 
+
+/*** HAMBURGER MENU ***/
 
 .hamburguer {
-background: none;
-border: none;
-color: #335c67;
-cursor: pointer;
-font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: none;
+    border: none;
+    color: #335c67;
+    cursor: pointer;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .hamburguer::before {
     content: "\2630";
-    font-size: 1.5rem ;
+    font-size: 1.5rem;
 }
 
 .hamburguer.show::before {
     content: "\00D7";
-    font-size: 1.5rem ;
+    font-size: 1.5rem;
+}
+
+
+/*** NAVIGATION ***/
+
+.navigation {
+    display: none;
+    background-color: #335c67;
+}
+
+.navigation.show {
+    display: block;
+}
+
+.navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation a {
+    display: block;
+    padding: .8rem 10px;
+    color: #eee;
+    background-color: #335c67;
+    text-decoration: none;
+    border-bottom: solid 1px #335c67;
+}
+
+.navigation li.current {
+    background-color: #08303d;
+}
+
+.navigation a:hover {
+    background-color: #fff3b0;
+    color: #335c67;
+}
+
+h1 {
+    margin-left: 10px;
+}
+
+
+/*** MAIN ***/
+
+main {
+    width: 100%;
+    padding: 5px 15px 5px 15px;
+}
+
+.cards {
+    gap: 20px;
+}
+
+
+/*** ABOUT ME CARD ***/
+
+.about-me {
+    border: 1px solid #335c67;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.about-me h2 {
+    text-align: center;
+    background-color: #335c67;
+    color: #eee;
+    padding: 1rem;
+    margin-top: 0;
+}
+
+.about-me p {
+    padding: 10px;
+}
+
+
+/*** PHOTO CARD ***/
+
+.photo {
+    text-align: center;
+    border: 1px solid #335c67;
+    border-radius: 10px;
+}
+
+.photo img {
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.photo h2 {
+    background-color: #335c67;
+    color: #eee;
+    padding: 1rem;
+    margin-top: 0;
+}
+
+
+/*** COURSES SECTION ***/
+
+.courses {
+    text-align: center;
+}
+
+/* course filter buttons */
+
+#courseButtons {
+    margin: 10px 0;
+}
+
+#courseButtons button {
+    background-color: #335c67;
+    color: #eee;
+    border: none;
+    padding: 8px 14px;
+    margin: 4px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+#courseButtons button:hover {
+    background-color: #fff3b0;
+    color: #335c67;
+}
+
+
+/* course cards */
+
+#courses {
+    margin-top: 10px;
+}
+
+#courses div {
+    display: inline-block;
+    padding: 6px 10px;
+    margin: 4px;
+    background-color: #335c67;
+    color: #eee;
+    border-radius: 6px;
+    font-size: 0.9rem;
+}
+
+/* completed courses */
+
+
+#totalCredits {
+    margin-top: 8px;
+}
+
+
+/*** FOOTER ***/
+
+footer {
+    background-color: #335c67;
+    padding: 1rem 10px;
+    text-align: center;
+    color: #eee;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    column-gap: 8px;
+}
+
+.social a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border: #335c67 dotted 1px;
+    border-radius: 22px;
+}
+
+.social img {
+    width: 22px;
+    height: 22px;
+}
+
+.social a:hover {
+    background-color: #fff3b0;
 }

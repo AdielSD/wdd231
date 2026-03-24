@@ -8,10 +8,17 @@
     <meta name="author" content="Sephora Diaz">
     <meta name="description" content="A webpage of my course content">
 
+    <meta property="og:title" content="Home Page - Introduction and Courses WDD">
+    <meta property="og:description" content="Welcome to my personal space online! See my courses, projects, and what I’m passionate about.">
+    <meta property="og:image" content="https://via.placeholder.com/1200x630.png?text=Course+Cover+Image">
+    <meta property="og:url" content="https://adielsd.github.io/wdd231/">
+
 
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/large.css">
+
+    <link rel="icon" href="images/favicon.ico">
 
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/date.js " defer></script>
@@ -25,14 +32,14 @@
         <button id="ham-btn" class="hamburguer" aria-label="Open navigation menu"></button>
 
     </header>
-        <nav id="nav-bar" class="navigation">
-            <ul>
-                <li class="current"><a href="#">Home</a></li>
-                <li><a href="#">Chamber Project</a></li>
-                <li><a href="#">Final</a></li>
-                
-            </ul>
-        </nav>
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li class="current"><a href="#">Home</a></li>
+            <li><a href="#">Chamber Project</a></li>
+            <li><a href="#">Final</a></li>
+
+        </ul>
+    </nav>
     <main>
         <h1>Home</h1>
 
@@ -40,51 +47,54 @@
 
             <section class="about-me">
 
-            <h2>About Me</h2>
-            <p>Hello! I'm Sephora Diaz and this is my WDD231 course page. I'm from Lima Perú and I enjoy developing websites. 
-                I've always been skilled, in multiple things, such as dancing, drawing and more. I have a passion for creating stuff. I must say that if i were to be a 
-                fairy in a tinkerbell movie I would be a builder fairy. 
-            </p>
-         </section>
+                <h2>About Me</h2>
+                <p>Hello! I'm Sephora Diaz and this is my WDD231 course page. I'm from Lima Perú and I enjoy developing
+                    websites.
+                    I've always been skilled, in multiple things, such as dancing, drawing and more. I have a passion
+                    for creating stuff. I must say that if i were to be a
+                    fairy in a tinkerbell movie I would be a builder fairy.
+                </p>
+            </section>
 
-         <section class="photo">
-            <h2>Student photo</h2>
-            <img src="images/profile.jpg" alt="profile picture" width="250px" height="300px">
-         </section>
-        
+            <section class="photo">
+                <h2>Student photo</h2>
+                <img src="images/profile.jpg" alt="profile picture" width="250px" height="300px">
+            </section>
+
 
         </section>
 
-        
+
         <section class="courses">
             <h2>Web Certificate Courses</h2>
             <div id="courseButtons">
                 <button id="all">All Courses</button>
                 <button id="wdd">WDD Courses</button>
                 <button id="cse">CSE Courses</button>
-    </div>
+            </div>
 
-    <div id="courses"></div>
+            <div id="courses"></div>
 
-    <p id="totalCredits"></p>
+            <p id="totalCredits"></p>
 
-</section>
+        </section>
 
-        
+
 
 
     </main>
     <footer>
         <div class="social">
-        <a href="" target="_blank"><img src="images/instagram.svg" alt="instagram" width="16" height="16"></a>
-        <a href="" target="_blank"><img src="images/linkedin.svg" alt="linkedin" width="16" height="16"></a>
-        <a href="" target="_blank"><img src="images/microsoft-teams.svg" alt="microsoft-teams" width="16" height="16"></a>
-        <a href="" target="_blank"><img src="images/twitter-x.svg" alt="twitter-x" width="16" height="16"></a>
+            <a href="" target="_blank"><img src="images/instagram.svg" alt="instagram" width="16" height="16"></a>
+            <a href="" target="_blank"><img src="images/linkedin.svg" alt="linkedin" width="16" height="16"></a>
+            <a href="" target="_blank"><img src="images/microsoft-teams.svg" alt="microsoft-teams" width="16"
+                    height="16"></a>
+            <a href="" target="_blank"><img src="images/twitter-x.svg" alt="twitter-x" width="16" height="16"></a>
         </div>
 
         <p>
-    © <span id="year"></span> Sephora Diaz | Lima, Peru</p>
-    <p id="lastModified"></p>
+            © <span id="year"></span> Sephora Diaz | Lima, Peru</p>
+        <p id="lastModified"></p>
 
 
     </footer>

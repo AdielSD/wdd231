@@ -1,0 +1,100 @@
+@media (min-width: 768px) {
+
+
+    
+    .hamburguer {
+        display: none;
+    }
+
+    .navigation {
+        display: block;
+        padding: .5rem;
+        gap: 15px;
+    }
+
+   
+    .navigation ul {
+        display: flex;
+        justify-content: center;
+        gap: 0.5rem;
+
+}
+
+    .navigation a {
+        border: none;
+    }
+    
+    
+    footer {
+        grid-template-columns: repeat(3, 1fr);
+        align-items: center;
+    }
+
+    footer > div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .contact {
+        text-align: left;
+    }
+
+    .contact h4 {
+    font-style: italic;
+    text-decoration: underline;
+    padding: 10px;
+}
+
+    .social {
+        display: flex;
+        flex-direction: row; 
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .date {
+        text-align: right;
+    }
+
+    #members {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+#members section {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    gap: 1rem;
+    align-items: center;
+    padding: 1rem;
+}
+
+/* IMAGE */
+#members img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    justify-self: center;
+}
+
+/* TEXT BLOCK */
+#members section > div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    text-align: center;
+}
+
+/* BUTTON */
+#members a {
+    align-self:center;
+}
+
+/* TITLE */
+#members h3 {
+    font-size: 1.2rem;
+}
+}

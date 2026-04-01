@@ -1,90 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Course Home Page | Sephora Diaz</title>
+    <title>Directory | Limatambo Central Business Hub</title>
     <meta name="author" content="Sephora Diaz">
-    <meta name="description" content="A webpage of my course content">
+    <meta name="description" content="This is the directory site of the Lima Central Business Hub">
 
-    <meta property="og:title" content="Home Page - Introduction and Courses WDD">
-    <meta property="og:description" content="Welcome to my personal space online! See my courses, projects, and what I’m passionate about.">
-    <meta property="og:image" content="https://via.placeholder.com/1200x630.png?text=Course+Cover+Image">
+    <meta property="og:title" content="Directory - Limatambo Central Business Hub">
+    <meta property="og:description" content="Supporting local businesses in Limatambo by providing resources, networking opportunities, and community events to help growth and success.">
+    <meta property="og:image" content="https://adielsd.github.io/wdd231/images/limatambo-logo.png">
     <meta property="og:url" content="https://adielsd.github.io/wdd231/">
+    <meta property="og:type" content="website">
 
 
+    <!--STYLESHEETS-->
     <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="styles/directory.css">
+   
+    <link rel="preload" href="styles/directory-large.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="styles/directory-large.css"></noscript>
 
-    <link rel="icon" href="images/favicon.ico">
+    <link rel="icon" href="images/limatambo-logo.svg" width="60" height="60">
+        <!--FAMILY FONTS-->
 
-    <script src="scripts/navigation.js" defer></script>
-    <script src="scripts/date.js " defer></script>
-    <script src="scripts/course.js" defer></script>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</noscript>
+
+
+    <script src="scripts/directory.js" defer></script>
+    <script src="scripts/date.js" defer></script>
 </head>
-
 <body>
     <header>
-        <img src="images/house-heart-fill.svg" alt="site logo" width="512" height="512">
-        <span>Sephora's Site</span>
+        <img src="images/limatambo-logo.svg" alt="site_logo" width="60" height="60">
+
+              <span> Limatambo Central Business Hub </span>
+
         <button id="ham-btn" class="hamburguer" aria-label="Open navigation menu"></button>
 
     </header>
-    <nav id="nav-bar" class="navigation">
-        <ul>
-            <li class="current"><a href="#">Home</a></li>
-            <li><a href="#">Chamber Project</a></li>
-            <li><a href="#">Final</a></li>
 
-        </ul>
-    </nav>
+
+                
+
+        
+            <nav id ="nav-bar" class="navigation" >
+                <ul>
+
+                <li><a href="">Home</a></li>
+                <li><a href="">Directory</a></li>
+                <li><a href="">Join</a></li>
+                <li><a href="">Discover</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Events</a></li>
+
+            </ul>
+            </nav>
+
+
     <main>
-        <h1>Home</h1>
 
-        <section class="cards">
+        <h1>Business Directory</h1>
 
-            <section class="about-me">
-
-                <h2>About Me</h2>
-                <p>Hello! I'm Sephora Diaz and this is my WDD231 course page. I'm from Lima Perú and I enjoy developing
-                    websites.
-                    I've always been skilled, in multiple things, such as dancing, drawing and more. I have a passion
-                    for creating stuff. I must say that if i were to be a
-                    fairy in a tinkerbell movie I would be a builder fairy.
-                </p>
-            </section>
-
-            <section class="photo">
-                <h2>Student photo</h2>
-                <img src="images/profile.jpg" alt="profile picture" width="250px" height="300px">
-            </section>
-
-
+        <section id="members">
         </section>
 
 
-        <section class="courses">
-            <h2>Web Certificate Courses</h2>
-            <div id="courseButtons">
-                <button id="all">All Courses</button>
-                <button id="wdd">WDD Courses</button>
-                <button id="cse">CSE Courses</button>
-            </div>
-
-            <div id="courses"></div>
-
-            <p id="totalCredits"></p>
-
-        </section>
 
 
+
+
+
+       <!-- <h3>Find Us</h3>
+        <iframe 
+            src="https://www.google.com/maps?q=Surquillo+Lima+Peru&output=embed" 
+            width="100%" 
+            height="300" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy">
+        </iframe>
+
+        -->
 
 
     </main>
+
     <footer>
-        <div class="social">
+
+         <div class="Contact">
+            <h4>Contact Us</h4>
+            <p><strong>Phone:</strong> +51 987 654 321</p>
+            <p><strong>Email:</strong> info@limatambochamber.pe</p>
+            
+            <address>
+                Limatambo Chamber of Commerce<br>
+                Av. República de Panamá 4567<br>
+                Surquillo, Lima 15047<br>
+                Peru
+            </address>
+         </div>
+            
+    
+
+
+
+         <div class="social">
             <a href="" target="_blank"><img src="images/instagram.svg" alt="instagram" width="16" height="16"></a>
             <a href="" target="_blank"><img src="images/linkedin.svg" alt="linkedin" width="16" height="16"></a>
             <a href="" target="_blank"><img src="images/microsoft-teams.svg" alt="microsoft-teams" width="16"
@@ -92,13 +116,17 @@
             <a href="" target="_blank"><img src="images/twitter-x.svg" alt="twitter-x" width="16" height="16"></a>
         </div>
 
-        <p>
+        <div class="date">
+            <p>WDD 231</p>
+            <p>
             © <span id="year"></span> Sephora Diaz | Lima, Peru</p>
-        <p id="lastModified"></p>
+            <p id="lastModified"></p>
 
+        </div>
+
+        
 
     </footer>
-
+    
 </body>
-
 </html>
